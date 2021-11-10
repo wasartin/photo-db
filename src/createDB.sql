@@ -1,0 +1,1 @@
+CREATE DATABASE pi_frame_photos;
