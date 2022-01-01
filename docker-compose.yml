@@ -1,24 +1,15 @@
-version: '0.0'
+version: '3.0'
+
 services:
-  postgres:
-    image: postgres
+  postgres-photo:
+    image: postgres:14-alpine
+    container_name: photoDB
     restart: always
-    environment:
-      - DATABASE_HOST=127.0.0.1
-      - POSTGRES_USER=pg_user
-      - POSTGRES_PASSWORD=docket
-      - POSTGRES_DB=pg-docker
     ports:
       - "5432:5432"
-    volumes:
-      - ./docker_postgres_init.sql/docker-entrypoint-initdb.d/docker_postgres_init.sql
-
-  postgres-admin-compose:
-    image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: "watisartin@gmail.com"
-      PGADMIN_DEFAULT_PASSWORD: "test123"
-    ports:
-      - "16543:80"
-    depends_on:
-      - postgres
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=pg-user
+      - POSTGRES_PASSWORD=docket
+      - POSTGRES_DB=pi_frame_displayable
+    build: .

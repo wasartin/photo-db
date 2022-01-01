@@ -11,3 +11,6 @@
 - Now how the hell do I do anything else?
 - How do I get in?
 - how do I run my scripts.
+
+LO:= How to incorporate dockerfile and docker-compose?
+  - how to get my .sql files into my docker image? (probably the dockerfile)
