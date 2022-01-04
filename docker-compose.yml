@@ -13,3 +13,14 @@ services:
       - POSTGRES_PASSWORD=docket
       - POSTGRES_DB=pi_frame_displayable
     build: .
+
+  postgres-admin-compose:
+    image: dpage/pgadmin4
+    container_name: photoDB-admin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "watisartin@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "test123"
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres-photo
