@@ -1,16 +1,12 @@
-> docker pull postgres
+## Docker
 
-- We now have a Postgres Image
-
-- --rm to remove when done. -e to set env. -d to detech. (launch in background), -p to set the ports, then finally the image.
-> docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docket -d -p 5432:5432 postgres
-
+> docker-compose up --build -d
 > docker ps
-- You can see what you just made
 
-- Now how the hell do I do anything else?
-- How do I get in?
-- how do I run my scripts.
 
-LO:= How to incorporate dockerfile and docker-compose?
-  - how to get my .sql files into my docker image? (probably the dockerfile)
+### Psql for debugging
+
+- Login
+  - psql -h 127.0.0.1 -U pg-user -d pi_frame_displayable
+- show all tables
+  - \dt
