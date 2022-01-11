@@ -3,6 +3,10 @@
 > docker-compose up --build -d
 > docker ps
 
+### How to start docker up
+- make run
+- To enter the container:
+  - docker exec -it photoDB sh 
 
 ### Psql for debugging
 
