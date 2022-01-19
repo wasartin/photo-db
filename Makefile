@@ -5,6 +5,9 @@ run: ## Run container on port set in docker-compose
 it-stop:
 	docker stop photoDB photoDB-admin
 
+clean:
+	docker rm photoDB photoDB-admin
+
 status:
 	docker ps -a
 
