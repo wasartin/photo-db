@@ -5,6 +5,9 @@ run: ## Run container on port set in docker-compose
 it-stop:
 	docker stop photoDB photoDB-admin
 
-#ad-hoc-test:
-	#run
-	# Print out the database
+status:
+	docker ps -a
+
+# ad-hoc-test:
+# run
+# Print out the database
