@@ -8,6 +8,8 @@ it-stop:
 clean:
 	docker rm photoDB photoDB-admin
 
+clobber: it-stop clean
+
 status:
 	docker ps -a
 
