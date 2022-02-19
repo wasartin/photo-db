@@ -1,6 +1,6 @@
 
 run: ## Run container on port set in docker-compose
-	docker-compose up --build -d
+	docker-compose up -d
 
 it-stop:
 	docker stop photoDB photoDB-admin
