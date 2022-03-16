@@ -12,8 +12,9 @@ services:
       - POSTGRES_USER=pg-user
       - POSTGRES_PASSWORD=docket
       - POSTGRES_DB=pi_frame_displayable
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
     build: .
-
   postgres-admin-compose:
     image: dpage/pgadmin4
     container_name: photoDB-admin
@@ -24,3 +25,5 @@ services:
       - "16543:80"
     depends_on:
       - postgres-photo
+volumes:
+  pgdata:

@@ -1,18 +1,19 @@
 
-run: ## Run container on port set in docker-compose
-	docker-compose up -d
+up: ## Run container on port set in docker-compose
+	docker-compose up --build -d
 
-it-stop:
+enter:
+	docker exec -it photoDB sh
+
+down:
+	docker-compose down
+
+clean: 
 	docker stop photoDB photoDB-admin
-
-clean:
 	docker rm photoDB photoDB-admin
 
-clobber: it-stop clean
+clobber: clean
+	docker volume rm -f photo-db_pgdata
 
 status:
 	docker ps -a
-
-# ad-hoc-test:
-# run
-# Print out the database
