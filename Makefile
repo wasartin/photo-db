@@ -13,7 +13,7 @@ clean:
 	docker rm photoDB photoDB-admin
 
 clobber: clean
-	docker volume rm pgdata
+	docker volume rm -f photo-db_pgdata
 
 status:
 	docker ps -a
