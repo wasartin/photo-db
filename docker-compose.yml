@@ -12,6 +12,8 @@ services:
       - POSTGRES_USER=pg-user
       - POSTGRES_PASSWORD=docket
       - POSTGRES_DB=pi_frame_displayable
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
     build: .
 
   postgres-admin-compose:
