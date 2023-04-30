@@ -1,5 +1,11 @@
 INSERT INTO
-  photo(pho_file_path, pho_title)
+  type(typ_contents)
 VALUES
-  ('C:\Users\Will\Develop\workshop\piFrame\gallery\src\main\resources\static\posters\derzu_uzala.jpg', 'Derzu Uzala (1975)'),
-  ('C:\Users\Will\Develop\workshop\piFrame\gallery\src\main\resources\static\posters\thing.jpg', 'The Thing (1982)');
+  ('movie'), ('book'), ('game'),
+  ('comic'), ('video'), ('art'),
+  ('personal'), ('other');
+
+INSERT INTO
+  photo(pho_file_path, pho_title, pho_typ_id)
+VALUES
+  ('location', 'Derzu Uzala (1975)' 0);
