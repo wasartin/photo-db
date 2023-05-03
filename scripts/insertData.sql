@@ -7,7 +7,7 @@ VALUES
 
 INSERT INTO
   photo(pho_file_path, pho_title, pho_typ_id)
-VALUES
+VALUE
     ("home/piframe/dev/photo-db/posters/jpg/1993-last-action-hero-poster.jpeg", "Last Action Hero", 0)
     ("home/piframe/dev/photo-db/posters/jpg/rotld.jpeg", "ROTLD", 0)
     ("home/piframe/dev/photo-db/posters/jpg/talesFromTheCrypt.jpeg", "Tales from the Crypt", 0)
