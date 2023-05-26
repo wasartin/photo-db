@@ -9,10 +9,7 @@ down:
 	docker-compose down
 
 clean: 
-	docker stop photoDB photoDB-admin
-	docker rm photoDB photoDB-admin
-
-clobber: clean
+	docker-compose down --volumes
 	docker volume prune
 
 status:
