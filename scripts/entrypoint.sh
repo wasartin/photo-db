@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Creating tables"
+echo "Setup of DB. Initialization scripts to be executed"

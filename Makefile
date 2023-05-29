@@ -8,8 +8,7 @@ enter:
 down:
 	docker-compose down
 
-clean: 
-	docker-compose down --volumes
+clean:
 	docker volume prune
 
 status:
