@@ -3,15 +3,15 @@ INSERT INTO
 VALUES
   ('movie'), ('book'), ('comic'),
   ('video'), ('art'), ('personal'),
-  ('other');
+  ('photo'), ('other');
 
 INSERT INTO
-  photo(pho_file_path, pho_title, pho_typ_id)
+  image(img_file_path, img_title, img_typ_id)
 VALUES
     ('home/piframe/dev/photo-db/posters/jpg/1993-last-action-hero-poster.jpeg', 'Last Action Hero', 1),
     ('home/piframe/dev/photo-db/posters/jpg/rotld.jpeg', 'ROTLD', 1),
     ('home/piframe/dev/photo-db/posters/jpg/Burton_KingKong.jpeg', 'King Kong', 1),
-    ('home/piframe/dev/photo-db/posters/jpg/darkCrystal.jpeg', 'Dark Crystal 1', 1),
+    ('home/piframe/dev/photo-db/posters/jpg/darkCrystal, Richard Amsel.jpeg', 'Dark Crystal 1', 1),
     ('home/piframe/dev/photo-db/posters/jpg/godzilla.jpeg', 'Godzilla 1', 1),
     ('home/piframe/dev/photo-db/posters/jpg/1982-the-dark-crystal-poster.jpeg', 'Dark Crystal 2', 1),
     ('home/piframe/dev/photo-db/posters/jpg/totoroPoster.jpeg', 'Totoro', 1),
